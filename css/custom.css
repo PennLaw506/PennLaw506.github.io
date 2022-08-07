@@ -98,3 +98,18 @@
     font-size: 1.25rem;
     color: #011F5B;
 }
+
+.accordion-info {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #8f8f8f;
+    padding: 1rem;
+    background-color: #f0f0f07d;
+}
+
+/* hr {
+    color:#990000;
+    border-top: 5px dotted;
+    max-width: 25rem;
+    justify-self: center;
+} */

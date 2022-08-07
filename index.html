@@ -7,163 +7,543 @@
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-custom">
-        <div class="container mx-md-5">
-            <div class="navbar-header">
-              <span class="navbar-brand navbar-title">LAW 506-302</span>
+  <nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-custom">
+    <div class="container mx-md-5">
+      <div class="navbar-header">
+      <span class="navbar-brand navbar-title">LAW 506-302</span>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon toggle-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link navbar-item" href="#">Course Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-item" href="#schedule">Class Schedule and Readings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-item" href="#">Class Slides</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid main">
+    <div class="row">
+      <div class="col" style="height: 50px;"> </div> 
+    </div>
+    <div class="row mt-5 justify-content-center">
+      <div class="col-auto text-center">
+        <div class="title">Technology Law & Ethics</div>
+        <div class="subtitle">University of Pennsylvania Law School, Fall 2022</div>
+      </div>
+      <div class="col-auto"> 
+        <img src="assets/UniversityofPennsylvania_Shield_RGB.svg" style="height: 90px;" />
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12 col-md-8 offset-md-2 justify-content-center mb-3">
+        <h4 class="sub-heading mb-3">Class Logistics</h4>
+        <table class="syllabus-table">
+          <tbody>
+            <tr>
+              <td><strong>Instructor</strong></td>
+              <td>Alex Mueller (<a href="mailto:almuel@law.upenn.edu">almuel@law.upenn.edu</a>)</td>
+            </tr>
+            <tr>
+              <td><strong>Time</strong></td>
+              <td>Tuesdays and Thursdays, 2:00 - 3:20pm</td>
+            </tr>
+            <tr>
+              <td><strong> Location</strong></td>
+              <td>
+                <a href="https://www.law.upenn.edu/administration/rooms.php">Tannenbaum Hall 142</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Office Hours</strong></td>
+              <td>TBD</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row mt-3 bg-alt">
+      <div class="col-12 col-md-8 offset-md-2 pt-3">
+        <h4 class="sub-heading mb-1">Course Description</h4>
+        <p>
+            What makes for a responsibly designed product?  What duties do technologists’ have to ensure system security and protect user privacy? Who should be held accountable when artificial intelligence misbehaves? What constraints does intellectual property law place on product design and technologists’ latitude to experiment with technologies? As new technologies continue to emerge and shape both our lives and the world around us, they also raise novel, complex ethical questions that today’s engineers, tech entrepreneurs, other technology professionals are forced to confront. 
+        </p>
+        <p>
+            This course will introduce the legal frameworks and principles of ethical decision-making that enable technologists to identify their societal responsibilities and think critically through difficult  ethical issues. Each class, we will exercise the application of these principles by examining real, modern ethical dilemmas at the cutting edge of technology, approaching them from the perspective of a practicing technologist. Major topics we will explore this semester include cybersecurity and privacy, digital surveillance, artificial intelligence, environmental sustainability, open source software, autonomous vehicles, and more. 
+        </p>
+        <h4 class="sub-heading mb-1">Learning Outcomes</h4>
+        <p> Learning outcomes for the semester include the following:
+          <ul>
+            <li>Demonstrate a core understanding of major legal and ethical considerations in the technology sector.</li>
+            <li>Be able to spot key legal and ethical issues pertaining to technology as utilized in the professional environment.</li>
+            <li>Communicate effectively on topics related to technology law and ethics.</li>
+            <li>Acquire an understanding of the interplay between law and ethics in decision-making affecting technologists.</li>
+          </ul>
+        </p>
+        <h4 class="sub-heading mb-1">Course Materials</h4>
+        <p>
+            There is no required textbook for this course. Save the money and buy yourself something nice. All reading materials for this course will be made available on the course website. For internet readings, I have provided the appropriate URL address in the syllabus below.
+        </p>
+        <div class="bd-callout bd-callout-info">
+          <h4>Note on the Readings</h4>
+            <span class="callout-text">Many of the assigned readings include excerpts from articles and cases.  Note the page ranges designated for each assignment.  In some cases, I have specified section numbers where page ranges can be confusing to those not yet familiar with case pagination standards.</span>
+        </div> 
+        <h4 class="sub-heading">Grade Breakdown</h4>
+        <p>Grades will be based on three writing assignments (15% each, or 45% total), one in-class oral presentation (15%), class participation (15%), and a final exam (25%).</p>
+        <p> <strong>Short writing assignments</strong> - assignments in the form of 4-6 page essays will be due as indicated in the Syllabus (see below for exact dates and assigned topics).  I will provide a full explanation of each topic two weeks before it is due. </p>
+        <p><strong>Presentations</strong> - Presentation opportunities will be spread throughout the semester.  Students may request their desired topic, and I will do my best to give everyone their first or second choice. The presentation shall include a clear presentation of the relevant technological, ethical, and/or legal issues, an analysis of these issues utilizing class knowledge, and a proposed resolution. </p>
+        <p><strong>Participation</strong> - This course will incorporate in-class discussions as a core component. A non-negligible portion of your grade will depend on your active participation in these discussions. Therefore, you are strongly encouraged to come to class prepared by reading all materials for that week beforehand. </p>
+      </div>
+    </div>
+    <div id="schedule" class="row mt-5">
+      <div class="col-12 col-md-8 offset-md-2">
+        <div class="text-center mb-5">
+          <h2>Schedule and Reading Assignments</h2>
+        </div>
+        <div>
+          <h4 class="unit-heading">UNIT 1: COURSE INTRODUCTION AND SOURCES OF DUTIES AND RESPONSIBILITIES </h4>
+        </div>
+        <div class="accordion" id="accordionUnitOne">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Aug. 30th – Class Overview and Syllabus Walkthrough
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="classOne" data-bs-parent="#accordionUnitOne">
+              <div class="accordion-body">
+                No readings for today. Happy syllabus day!
+              </div>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon toggle-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link navbar-item" href="#">Course Overview</a>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Sept. 1st  – Professional Codes of Ethics and Moral-Theoretical Frameworks
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="classTwo" data-bs-parent="#accordionUnitOne">
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                      National Society of Professional Engineers, <em><a href="http://www.nspe.org/resources/ethics/code-ethics">Code of Ethics for Engineers</a></em> (July 2007).
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link navbar-item" href="#">Reading Schedule</a>
+                  <li>
+                      Institute of Electrical and Electronics Engineers, <em><a href="http://www.ieee.org/about/corporate/governance/p7-8.html">IEEE Code of Ethics</a></em> (IEEE Policies, § 7.8).
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link navbar-item" href="#">Class Slides</a>
+                  <li>
+                      Association for Computing Machinery (ACM), <em><a href="https://www.acm.org/code-of-ethics">ACM Code of Ethics and Professional Conduct</a></em> (June 22, 2018).
+
+                  </li>
+                  <li>
+                      Sheila Bonde, Paul Firenze et al., <em><a href="https://www.brown.edu/academics/science-and-technology-studies/sites/brown.edu.academics.science-and-technology-studies/files/uploads/Framework.pdf">Making Choices: A Framework for Making Ethical Decisions</a></em>, <span style="font-variant: small-caps;">Brown Univ</span> (2013).
                   </li>
                 </ul>
+              </div>
             </div>
-        </div>
-    </nav>
-    <div class="container-fluid main">
-        <div class="row">
-            <div class="col" style="height: 50px;"> </div> 
-        </div>
-        <div class="row mt-5 justify-content-center">
-            <div class="col-auto text-center">
-                <div class="title">Technology Law & Ethics</div>
-                <div class="subtitle">University of Pennsylvania Law School, Fall 2022</div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Sept. 6th – The Law, Technology, and Their Co-Evolution
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="classThree" data-bs-parent="#accordionUnitOne">
+              <div class="accordion-body">
+                <ul>
+                  <li> Larry Lessig, What Things Regulate in Code - <span style="font-variant: small-caps;">Version 2.0</span> (2005) [pp. 120-137]</li>
+                  <li> David Friedman, <em>Does Technology Require New Law?</em>, 25 <span style="font-variant: small-caps;">Harv. J.L. & Pub. Pol'y</span> 71 (2002) [pp. 71-75]</li>
+                  <li> Vivek Wadhwa, <em><a href="https://www.technologyreview.com/2014/04/15/172377/laws-and-ethics-cant-keep-pace-with-technology/">Laws and Ethics Can’t Keep Pace with Technology</a></em>, <span style="font-variant: small-caps;">MIT Tech. Rev.</span> (April 15, 2014). </li>
+                  <li> Ephrat Livini, <em><a href="https://www.nytimes.com/2021/11/23/business/dealbook/cryptocurrency-code-law-technology.html">For Cryptocurrency, the Challenge Is to Balance Code and Law</a></em>, <span style="font-variant: small-caps;">N.Y. Times: DealBook</span> (Nov. 23, 2021).</li>
+                  <li> Izabella Kaminska, Legal exploits and arbitrage, DAO edition, <span style="font-variant: small-caps;">Financial Times</span> (June 21, 2016).</li>
+                </ul>
+              </div>
             </div>
-            <div class="col-auto"> 
-                <img src="assets/UniversityofPennsylvania_Shield_RGB.svg" style="height: 90px;" />
-            </div>
+          </div>
         </div>
-        <div class="row mt-5">
-            <div class="col-12 col-md-8 offset-md-2 justify-content-center mb-3">
-            <h4 class="sub-heading mb-3">Class Logistics</h4>
-                <table class="syllabus-table">
-                    <tbody>
-                        <tr>
-                          <td><strong>Instructor</strong></td>
-                          <td>Alex Mueller (<a href="mailto:almuel@law.upenn.edu">almuel@law.upenn.edu</a>)</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Time</strong></td>
-                          <td>Tuesdays and Thursdays, 2:00 - 3:20pm</td>
-                        </tr>
-                        <tr>
-                          <td><strong> Location</strong></td>
-                          <td>
-                            <a href="https://www.law.upenn.edu/administration/rooms.php">Tannenbaum Hall 142</a>
-                          </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Office Hours</strong></td>
-                            <td>TBD</td>
-                          </tr>
-                      </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="row mt-3 bg-alt">
-            <div class="col-12 col-md-8 offset-md-2 pt-3">
-                <h4 class="sub-heading mb-1">Course Description</h4>
-                <p>
-                    What makes for a responsibly designed product?  What duties do technologists’ have to ensure system security and protect user privacy? Who should be held accountable when artificial intelligence misbehaves? What constraints does intellectual property law place on product design and technologists’ latitude to experiment with technologies? As new technologies continue to emerge and shape both our lives and the world around us, they also raise novel, complex ethical questions that today’s engineers, tech entrepreneurs, other technology professionals are forced to confront. 
-                </p>
-                <p>
-                    This course will introduce the legal frameworks and principles of ethical decision-making that enable technologists to identify their societal responsibilities and think critically through difficult  ethical issues. Each class, we will exercise the application of these principles by examining real, modern ethical dilemmas at the cutting edge of technology, approaching them from the perspective of a practicing technologist. Major topics we will explore this semester include cybersecurity and privacy, digital surveillance, artificial intelligence, environmental sustainability, open source software, autonomous vehicles, and more. 
-                </p>
-                <h4 class="sub-heading mb-1">Learning Outcomes</h4>
-                <p>
-                    Learning outcomes for the semester include the following:
-                    <ul>
-                        <li>Demonstrate a core understanding of major legal and ethical considerations in the technology sector.</li>
-                        <li>Be able to spot key legal and ethical issues pertaining to technology as utilized in the professional environment.</li>
-                        <li>Communicate effectively on topics related to technology law and ethics.</li>
-                        <li>Acquire an understanding of the interplay between law and ethics in decision-making affecting technologists.</li>
-                    </ul>
-                </p>
-                <h4 class="sub-heading mb-1">Course Materials</h4>
-                <p>
-                    There is no required textbook for this course. Save the money and buy yourself something nice. All reading materials for this course will be made available on the course website. For internet readings, I have provided the appropriate URL address in the syllabus below.
-                </p>
-                <div class="bd-callout bd-callout-info">
-                  <h4>Note on the Readings</h4>
-                        Many of the assigned readings include excerpts from articles and cases.  Note the page ranges designated for each assignment.  In some cases, I have specified section numbers where page ranges can be confusing to those not yet familiar with case pagination standards.
-                </div> 
-                <h4 class="sub-heading">Grade Breakdown</h4>
-                <p>Grades will be based on three writing assignments (15% each, or 45% total), one in-class oral presentation (15%), class participation (15%), and a final exam (25%).</p>
-                <p> <strong>Short writing assignments</strong> - assignments in the form of 4-6 page essays will be due as indicated in the Syllabus (see below for exact dates and assigned topics).  I will provide a full explanation of each topic two weeks before it is due. </p>
-                <p><strong>Presentations</strong> - Presentation opportunities will be spread throughout the semester.  Students may request their desired topic, and I will do my best to give everyone their first or second choice. The presentation shall include a clear presentation of the relevant technological, ethical, and/or legal issues, an analysis of these issues utilizing class knowledge, and a proposed resolution. </p>
-                <p><strong>Participation</strong> - This course will incorporate in-class discussions as a core component. A non-negligible portion of your grade will depend on your active participation in these discussions. Therefore, you are strongly encouraged to come to class prepared by reading all materials for that week beforehand. </p>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-12 col-md-8 offset-md-2">
-                <div class="text-center mb-5">
-                    <h2>Schedule and Reading Assignments</h2>
-                </div>
-                <div class="">
-                    <h4 class="unit-heading">UNIT 1: COURSE INTRODUCTION AND SOURCES OF DUTIES AND RESPONSIBILITIES </h4>
-                </div>
-                <div class="accordion" id="accordionUnitOne">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="classOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Aug. 30th – Class Overview and Syllabus Walkthrough
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="classOne" data-bs-parent="#accordionUnitOne">
-                        <div class="accordion-body">
-                            No readings for today. Happy syllabus day!
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="classTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Sept. 1st  – Professional Codes of Ethics and Moral-Theoretical Frameworks
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="classTwo" data-bs-parent="#accordionUnitOne">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>
-                                    National Society of Professional Engineers, <em><a href="http://www.nspe.org/resources/ethics/code-ethics">Code of Ethics for Engineers</a></em> (July 2007).
-                                </li>
-                                <li>
-                                    Institute of Electrical and Electronics Engineers, <em><a href="http://www.ieee.org/about/corporate/governance/p7-8.html">IEEE Code of Ethics</a></em> (IEEE Policies, § 7.8).
-                                </li>
-                                <li>
-                                    Association for Computing Machinery (ACM), <em><a href="https://www.acm.org/code-of-ethics">ACM Code of Ethics and Professional Conduct</a></em> (June 22, 2018).
 
-                                </li>
-                                <li>
-                                    Sheila Bonde, Paul Firenze et al., <em><a href="https://www.brown.edu/academics/science-and-technology-studies/sites/brown.edu.academics.science-and-technology-studies/files/uploads/Framework.pdf">Making Choices: A Framework for Making Ethical Decisions</a></em>, <span style="font-variant: small-caps;">Brown Univ</span> (2013).
-                                </li>
-                            </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Sept. 6th – The Law, Technology, and Their Co-Evolution
-                        </button>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionUnitOne">
-                        <div class="accordion-body">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
+        <hr />
+        
+        <div>
+          <h4 class="unit-heading">UNIT 2: Responsible Research and Innovation </h4>
         </div>
+        <div class="accordion" id="accordionUnitTwo">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                Sept. 8th – Responsible Innovation in an Age of Disruption
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="classFour" data-bs-parent="#accordionUnitTwo">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Sept. 13th – When Should a Technology Be Pursued?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="classFive" data-bs-parent="#accordionUnitTwo">
+              <div class="accordion-body">
+                  TBD
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Sept. 15th – Research Ethics and Integrity
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="classSix" data-bs-parent="#accordionUnitTwo">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div>
+          <h4 class="unit-heading">UNIT 3: PRODUCT RELIABILITY, RISK, AND SAFETY</h4>
+        </div>
+        <div class="accordion" id="accordionUnitThree">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                Sept. 20th – Legal Duties and Allocation of Responsibility for Harm
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="classSeven" data-bs-parent="#accordionUnitThree">
+              <div class="accordion-body">
+                  TBD
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classEight">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+               Sept. 22nd – Assessing and Mitigating Risk
+             </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="classEight" data-bs-parent="#accordionUnitThree">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div>
+          <h4 class="unit-heading">UNIT 4: PRIVACY AND SECURITY</h4>
+        </div>
+        <div class="accordion" id="accordionUnitFour">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classNine">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                Sept. 27th – Privacy Values and Duties of Protection 
+              </button>
+            </h2>
+            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="classNine" data-bs-parent="#accordionUnitFour">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="classTen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    Sept. 29th – Data Privacy Laws 
+                  </button>
+              </h2>
+              <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="classTen" data-bs-parent="#accordionUnitFour">
+                  <div class="accordion-body">
+                      TBD
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="classEleven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                    Oct. 4th – Digital Surveillance and Data-Driven Business Models
+                  </button>
+              </h2>
+              <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="classEleven" data-bs-parent="#accordionUnitFour">
+                  <div class="accordion-body">
+                      TBD
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header accordion-info">
+                      Oct. 6th - No class (fall break)
+              </h2>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classTwelve">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                  Oct. 11th – Privacy-by-Design and Privacy Enhancing Technologies
+                </button>
+            </h2>
+            <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="classTwelve" data-bs-parent="#accordionUnitFour">
+                <div class="accordion-body">
+                    TBD
+                </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classThirteen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                  Oct. 13th – Vulnerability Disclosures, Bug Bounties, and the Ethics of Hacking Back
+                </button>
+            </h2>
+            <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="classThirteen" data-bs-parent="#accordionUnitFour">
+                <div class="accordion-body">
+                    TBD
+                </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classFourteen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                Oct. 18th – Law Enforcement Assistance and Encryption Backdoors
+              </button>
+            </h2>
+            <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="classFourteen" data-bs-parent="#accordionUnitFour">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div>
+          <h4 class="unit-heading">UNIT 5: ADDITIONAL DESIGN CONSIDERATIONS</h4>
+        </div>
+        <div class="accordion" id="accordionUnitFive">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classFifteen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                Oct. 20th – Autonomy and Manipulation
+              </button>
+            </h2>
+            <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="classFifteen" data-bs-parent="#accordionUnitFive">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classSixteen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                Oct. 25th – Preventing Digital Harm and Abuse
+              </button>
+            </h2>
+            <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="classSixteen" data-bs-parent="#accordionUnitFive">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div>
+          <h4 class="unit-heading">UNIT 6: DATA, ALGORITHMS, AND ARTIFICIAL INTELLIGENCE</h4>
+        </div>
+        <div class="accordion" id="accordionUnitSix">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classSeventeen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                Oct. 27th – Accountability and Interpretability
+              </button>
+            </h2>
+            <div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="classSeventeen" data-bs-parent="#accordionUnitSix">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classEighteen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                Nov. 1st  – Discrimination and Bias
+              </button>
+            </h2>
+            <div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="classEighteen" data-bs-parent="#accordionUnitSix">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classNineteen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+                Nov. 3rd – Future Ethical Issues in AI
+              </button>
+            </h2>
+            <div id="collapseNineteen" class="accordion-collapse collapse" aria-labelledby="classNineteen" data-bs-parent="#accordionUnitSix">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classTwenty">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+                Nov. 8th – Future Ethical Issues in AI
+              </button>
+            </h2>
+            <div id="collapseTwenty" class="accordion-collapse collapse" aria-labelledby="classTwenty" data-bs-parent="#accordionUnitSix">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div>
+          <h4 class="unit-heading">UNIT 7: ADDITIONAL DESIGN CONSIDERATIONS</h4>
+        </div>
+        <div class="accordion" id="accordionUnitSeven">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classTwentyone">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyone" aria-expanded="false" aria-controls="collapseTwentyone">
+                Nov. 10th – Copyrights and Open Source Software
+              </button>
+            </h2>
+            <div id="collapseTwentyone" class="accordion-collapse collapse" aria-labelledby="classTwentyone" data-bs-parent="#accordionUnitSeven">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classTwentytwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentytwo" aria-expanded="false" aria-controls="collapseTwentytwo">
+                Nov. 15th – Patents and Inventions
+              </button>
+            </h2>
+            <div id="collapseTwentytwo" class="accordion-collapse collapse" aria-labelledby="classTwentytwo" data-bs-parent="#accordionUnitSeven">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div>
+          <h4 class="unit-heading">UNIT 8: ETHICAL ISSUES ARISING IN THE WORKPLACE</h4>
+        </div>
+        <div class="accordion" id="accordionUnitEight">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classTwentythree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentythree" aria-expanded="false" aria-controls="collapseTwentythree">
+                Nov. 17th – Whistleblowing
+              </button>
+            </h2>
+            <div id="collapseTwentythree" class="accordion-collapse collapse" aria-labelledby="classTwentythree" data-bs-parent="#accordionUnitEight">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classTwentyfour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyfour" aria-expanded="false" aria-controls="collapseTwentyfour">
+                Nov. 22nd – Confidentiality and Non-Compete Agreements
+              </button>
+            </h2>
+            <div id="collapseTwentyfour" class="accordion-collapse collapse" aria-labelledby="classTwentyfour" data-bs-parent="#accordionUnitEight">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header accordion-info">
+                    Nov. 24th - No class (Thanksgiving)
+            </h2>
+          </div>
+        </div>
+
+        <hr />
+
+        <div>
+          <h4 class="unit-heading">UNIT 9: SUSTAINABILITY, EQUALITY, AND SOCIAL JUSTICE</h4>
+        </div>
+        <div class="accordion" id="accordionUnitNine">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classTwentyfive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyfive" aria-expanded="false" aria-controls="collapseTwentyfive">
+                  Nov. 29th – Environmental Impact and Sustainability
+              </button>
+            </h2>
+            <div id="collapseTwentyfive" class="accordion-collapse collapse" aria-labelledby="classTwentyfive" data-bs-parent="#accordionUnitNine">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classTwentysix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentysix" aria-expanded="false" aria-controls="collapseTwentysix">
+                  Dec. 1st  – Diversity, Equity, and Inclusion
+              </button>
+            </h2>
+            <div id="collapseTwentysix" class="accordion-collapse collapse" aria-labelledby="classTwentysix" data-bs-parent="#accordionUnitNine">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classTwentyseven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyseven" aria-expanded="false" aria-controls="collapseTwentyseven">
+                  Dec. 6th – Access to Technology
+              </button>
+            </h2>
+            <div id="collapseTwentyseven" class="accordion-collapse collapse" aria-labelledby="classTwentyseven" data-bs-parent="#accordionUnitNine">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="classTwentyeight">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyeight" aria-expanded="false" aria-controls="collapseTwentyeight">
+                  Dec. 8th – Final Review
+              </button>
+            </h2>
+            <div id="collapseTwentyeight" class="accordion-collapse collapse" aria-labelledby="classTwentyeight" data-bs-parent="#accordionUnitNine">
+              <div class="accordion-body">
+                TBD
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </body>
