@@ -1,0 +1,100 @@
+
+.navbar-title{
+    color:#FFFFFF;
+    font-weight: 600;
+    margin: 0;
+}
+
+.title {
+    color: #011F5B;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.subtitle {
+    color:#011F5B;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.navbar-item {
+    color: #f5f5f5;
+}
+
+.navbar-custom {
+    background: #990000;
+    padding-bottom: 0.5rem;
+ }
+
+.sub-heading {
+    color: #011F5B;
+    font-size: 1.5rem;
+}
+
+.syllabus-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #8d8d8d;
+    border-bottom: 1px solid #8d8d8d;
+ }
+
+ .main a {
+    color: 990000
+}
+
+.syllabus-table tr {
+    border-collapse: collapse;
+    border-bottom: 1px dotted #c5c5c5;
+    line-height: 2rem;
+ }
+
+ .syllabus-table tr td {
+    padding-left: 2px;
+    padding-right: 2px;
+ }
+
+ .bg-alt {
+    background-color: #f5f5f5;
+ }
+
+ .bd-callout {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #b3b3b3;
+    border-left-width: .35rem;
+    border-radius: .25rem;
+    background-color: #011f5b42
+}
+
+.bd-callout h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #011F5B;
+    margin-top: 0;
+    margin-bottom: .25rem
+}
+
+.bd-callout-info {
+    border-left-color: #011F5B;
+    color: #011F5B;
+    font-weight: 350;
+    font-size: 1rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #011f5b42;
+    color:#011F5B;
+
+}
+
+.accordion-button {
+    font-weight: bold;
+}
+
+.unit-heading {
+    font-weight: 650;
+    font-size: 1.25rem;
+    color: #011F5B;
+}
