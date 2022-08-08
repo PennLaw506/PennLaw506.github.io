@@ -19,11 +19,25 @@
     margin: 0;
 }
 
-.navbar-item {
+.nav-link, .nav-link:focus, .nav-link:hover {
     color: #f5f5f5;
 }
 
-.navbar-custom {
+.nav-link.active {
+    border-bottom: 2px solid #FFFFFF;    
+}
+
+.scrollspy {
+    position: relative;
+    overflow-y: scroll;
+    height: 100%;
+} 
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+#navbarMain {
     background: #990000;
     padding-bottom: 0.5rem;
  }
@@ -106,6 +120,8 @@
     padding: 1rem;
     background-color: #f0f0f07d;
 }
+
+
 
 /* hr {
     color:#990000;
