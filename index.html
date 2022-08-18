@@ -17,11 +17,28 @@
       </button>
       <div class="collapse navbar-collapse justify-content-center me-md-5" id="navbarSupportedContent">
         <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#overview">Course Overview</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#overview">Course Overview</a>
+            <ul class="dropdown-menu hidden">
+              <li><a class="dropdown-item" href="#courseDesc"></a></li>
+              <li><a class="dropdown-item" href="#courseOutcomes"></a></li>
+              <li><a class="dropdown-item" href="#courseMaterials"></a></li>
+              <li><a class="dropdown-item" href="#courseGrading"></a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#schedule">Schedule and Readings</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#schedule">Schedule and Readings</a>
+            <ul class="dropdown-menu hidden">
+              <li><a class="dropdown-item" href="#accordionUnitOne"></a></li>
+              <li><a class="dropdown-item" href="#accordionUnitTwo"></a></li>
+              <li><a class="dropdown-item" href="#accordionUnitThree"></a></li>
+              <li><a class="dropdown-item" href="#accordionUnitFour"></a></li>
+              <li><a class="dropdown-item" href="#accordionUnitFive"></a></li>
+              <li><a class="dropdown-item" href="#accordionUnitSix"></a></li>
+              <li><a class="dropdown-item" href="#accordionUnitSeven"></a></li>
+              <li><a class="dropdown-item" href="#accordionUnitEight"></a></li>
+              <li><a class="dropdown-item" href="#accordionUnitNine"></a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#assignments">Assignments</a>
@@ -34,7 +51,7 @@
     </div>
   </nav>
   <div class="container-fluid" style="height: 60px;"></div>
-  <div class="container-fluid main scrollspy" data-bs-spy="scroll" data-bs-target="#navbarSupportedContent"  data-bs-smooth-scroll="true" tabindex="0">
+  <div class="container-fluid px-3 main scrollspy" data-bs-spy="scroll" data-bs-target="#navbarSupportedContent"  data-bs-smooth-scroll="true" tabindex="0">
     <div id="overview" class="row">
       <div class="container mt-5">
         <div class="row justify-content-center ">
@@ -47,8 +64,8 @@
           </div>
         </div>
         <div class="row mt-5">
-          <div class="col-12 col-md-8 offset-md-2 justify-content-center mb-3">
-            <h4 class="sub-heading mb-3">Class Logistics</h4>
+          <div class="col-12 col-md-8 offset-md-2 justify-content-center mb-1">
+            <h4 class="sub-heading mb-1">Class Logistics</h4>
             <table class="syllabus-table">
               <tbody>
                 <tr>
@@ -75,7 +92,7 @@
         </div>
         <div class="row mt-3 bg-alt">
           <div class="col-12 col-md-8 offset-md-2 pt-3">
-            <h4 class="sub-heading mb-1">Course Description</h4>
+            <h4 class="sub-heading mb-1" id="courseDesc">Course Description</h4>
             <p>
                 What makes for a responsibly designed product?  What duties do technologists’ have to ensure system security and protect user privacy? Who should be held accountable when artificial intelligence misbehaves? What constraints does intellectual property law place on product design and technologists’ latitude to experiment with technologies? As new technologies continue to emerge and shape both our lives and the world around us, they also raise novel, complex ethical questions that today’s engineers, tech entrepreneurs, other technology professionals are forced to confront.
             </p>
@@ -86,7 +103,7 @@
               This section satisfies the Engineering Ethics Requirement for CIS students.
             </p>
 
-            <h4 class="sub-heading mb-1">Learning Outcomes</h4>
+            <h4 class="sub-heading mb-1" id="courseOutcomes">Learning Outcomes</h4>
             <p> At the end of this course, students should be able to:
               <ul>
                 <li>Identify and critically analyze the ethical and/or legal issues implicated by an emerging technology or within the technology sector.</li>
@@ -95,7 +112,7 @@
                 <li>Develop and effectively communicate well-reasoned, normative arguments in response to a technology ethics or policy issue.</li>
               </ul>
             </p>
-            <h4 class="sub-heading mb-1">Course Materials</h4>
+            <h4 class="sub-heading mb-1" id="courseMaterials">Course Materials</h4>
             <p>
                 There is no required textbook for this course. Save the money and buy yourself something nice. All reading materials for this course will be made available on the course website. I have provided the appropriate URL address in the syllabus below, but if for some reason you are unable to access a particular reading, please let me know.
             </p>
@@ -104,7 +121,7 @@
                 <span class="callout-text">Pay attention to the <u>page ranges or section numbers</u> designated for each assignment, as there are many instances where I only intend for you to read part of the material listed. These will be found in brackets at the end of a bulleted item in the reading schedule below.</span>
                 <span class="callout-text">Also note that many readings have been designated as <u>optional</u>. You are not expected to complete these readings, nor should you feel pressured to do so (it will have no effect on your grade). These relate to material that I will likely mention in our class discussions and are only listed so you can go back reference them afterwards if so curious.</span> 
             </div>
-            <h4 class="sub-heading">Grading Breakdown</h4>
+            <h4 class="sub-heading" id="courseGrading">Grading Breakdown</h4>
             <p><strong>Three short writing assignments (15% each, or 45% total)</strong> - These assignments will require you to write a short (3-6 pages, double-spaced) essay or memo based on a topic/writing prompt that I have provided. The assignments will be due as indicated in the Syllabus (see below for exact dates). For each assignment, I will provide a full explanation of the topic two weeks before it is due. </p>
             <p><strong>Presentation (15%)</strong> - Each student will give a 8-10 minute in-class, oral presentation. Presentation opportunities will be spread throughout the semester.  Students may request their desired topic, and I will do my best to give everyone their first or second choice. The presentation shall include a clear presentation of the relevant technological, ethical, and/or legal issues, an analysis of these issues utilizing class knowledge, and a proposed resolution. </p>
             <p><strong>Final exam (25%)</strong> - You will be be given a take-home, open-book exam that must be submitted within the designated time window during finals week. I will provide further details about the exam structure and content later in the semester.</p>
@@ -663,9 +680,69 @@
       </div>
     </div>
     <div id="assignments" class="row my-5">
-      <div class="col-12 col-md-8 offset-md-2">
-        <div class="text-center mb-5">
-          <h2>Assignments</h2>
+      <div class="container bg-alt">
+        <div class="row mt-3">
+          <div class="col-12 col-md-8 offset-md-2">
+            <div class="text-center mb-3">
+              <h2>Assignments</h2>
+            </div>
+          </div>
+          <div class="col-12 col-md-8 offset-md-2 p-3">
+            <table class="assignment-table">
+              <thead>
+                <tr>
+                  <th>Assignment Name</th>
+                  <th>Due Date</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Short Writing Assignment #1</td>
+                  <td>Sept. 30th, 11:59 PM</td>
+                  <td>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#defaultModal">
+                      Assignment Details
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Short Writing Assignment #2</td>
+                  <td>Oct. 28th, 11:59 PM</td>
+                  <td>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#defaultModal">
+                      Assignment Details
+                    </button>
+                </tr>
+                <tr>
+                  <td>Short Writing Assignment #3</td>
+                  <td>Dec. 2nd, 11:59 PM</td>
+                  <td>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#defaultModal">
+                      Assignment Details
+                    </button>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row my-5" style="height: 10rem;">
+    </div>
+  </div>
+  <div class="modal fade" id="defaultModal" tabindex="-1" aria-labelledby="defaultModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="defaultModalLabel">TBD</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Additional detail will be provided two weeks prior to the assignment due date.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
