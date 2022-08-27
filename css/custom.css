@@ -30,7 +30,7 @@
 .scrollspy {
     position: relative;
     overflow-y: scroll;
-    height: 100%;
+    height: calc(100% - 60px);
 } 
 
 .navbar-collapse {
@@ -79,15 +79,12 @@ h2 {
     padding-right: 2px;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 16px;
  }
 
  li > b {
     font-weight: 600;
  }
-
- /* .bg-alt {
-    background-color: #f5f5f5;
- } */
 
  .bd-callout {
     padding: 0.75rem;
@@ -184,3 +181,26 @@ h2 {
 hr {
     color:#FFFFFF;
 }
+
+.small-caps{
+    font-variant: small-caps;
+    font-size: 16px;
+}
+
+div.accordion-body li {
+    margin-top: 3px;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+div.accordion-body > ul > li::marker {
+    content: "\2022";
+    font-size: 16px;
+}
+
+div.accordion-body > ul > li > ul > li::marker {
+    content: "\2012";
+    font-size: 14px;
+}
+
+
