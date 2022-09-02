@@ -45,13 +45,13 @@
     display:none;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .navbar-toggle-btn {
         display: none;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .navbar-collapse > ul {
         flex-direction: column;
     }
@@ -122,7 +122,10 @@
 }
 
 .main a {
-   color: 990000
+   color: #990000;
+   text-decoration: none; 
+   padding-bottom: 2px;
+   border-bottom: 1px solid #990000;
 }
 
 h2 {
@@ -271,6 +274,16 @@ div.accordion-body > ul > li::marker {
 div.accordion-body > ul > li > ul > li::marker {
     content: "\2012";
     font-size: 14px;
+}
+
+.card .card-title a {
+    border-bottom: none;
+    font-weight: 600;
+    ;
+}
+
+.card-bg-alt {
+    background-color: #011f5b26;
 }
 
 
