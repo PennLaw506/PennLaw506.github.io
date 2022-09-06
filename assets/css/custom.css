@@ -282,6 +282,10 @@ div.accordion-body > ul > li > ul > li::marker {
     ;
 }
 
+a.img-link {
+    border-bottom: none;
+}
+
 .card-bg-alt {
     background-color: #011f5b26;
 }
