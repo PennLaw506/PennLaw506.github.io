@@ -290,4 +290,11 @@ a.img-link {
     background-color: #011f5b26;
 }
 
+.card {
+    margin-top: 10px;
+}
+
+#slides-body {
+    overflow-y: scroll;
+}
 
