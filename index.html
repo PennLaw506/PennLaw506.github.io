@@ -5,7 +5,7 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet">
     <script src="assets/js/bootstrap.min.js"></script>
-</head>
+  </head>
 <body class="vh-100" style="overflow-y: hidden;">
   <nav class="navbar navbar-dark fixed-top navbar-expand-md" id="navbarMain">
     <div class="container-fluid nav-container mx-md-1 mx-lg-3">
@@ -819,7 +819,7 @@
                   <td>Short Writing Assignment #1</td>
                   <td>Sept. 30th, 11:59 PM</td>
                   <td>
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalAA">
+                    <button type="button" class="btn" data-source="1" data-bs-toggle="modal" data-bs-target="#assModal">
                       Assignment Details
                     </button>
                   </td>
@@ -828,7 +828,7 @@
                   <td>Short Writing Assignment #2</td>
                   <td>Oct. 28th, 11:59 PM</td>
                   <td>
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#defaultModal">
+                    <button type="button" class="btn" data-source="2" data-bs-toggle="modal" data-bs-target="#assModal">
                       Assignment Details
                     </button>
                 </tr>
@@ -836,7 +836,7 @@
                   <td>Short Writing Assignment #3</td>
                   <td>Dec. 2nd, 11:59 PM</td>
                   <td>
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#defaultModal">
+                    <button type="button" class="btn" data-source="3" data-bs-toggle="modal" data-bs-target="#assModal">
                       Assignment Details
                     </button>
                 </tr>
@@ -865,41 +865,14 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="modalAA" tabindex="-1" aria-labelledby="modalAALabel" aria-hidden="true">
+  <div class="modal fade" id="assModal" tabindex="-1" aria-labelledby="assModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalAALabel">Short Writing Assignment #1</h5>
+          <h5 class="modal-title" id="assModalLabel"></h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>As an experienced and well-respected software engineering manager at Anthro, the world’s largest social media platform, you have been chosen to lead the company’s newly formed Responsible Innovation Team. You receive an email from your boss, Anthro CEO Marc Sugarmountain, requesting your input on a major new project the company has been working on.</p>
-          <p> Anthro has been developing DeepStudio, a tool which will leverage a new proprietary machine learning model in order to generate complex, realistic videos from user-supplied natural language descriptions. Using DeepStudio, a user will enters a few sentences into a prompt and, a few minutes later, it will return a video depicting life-like human subjects, breathtaking natural landscapes, or just about anything else you could possibly imagine. Sugarmountain believes this technology will help unlock humanity’s full creative potential; no longer will the ability to create brilliant pieces of visual storytelling be limited to those with multi-million dollar budgets and decades of experience.</p>
-          <p>Having been embroiled in a number of recent scandals, the company has publicly committed itself to adopt a greater focus on social responsibility and ethics. In his email, Sugarmountain asks the following:</p>
-          <ul>
-            <li>If and/or under what conditions it is acceptable to use videos and photographs uploaded by users of Anthro’s main social media platform for training the underlying neural network that powers DeepStudio.</li>
-            <li>Whether there are concerns with the DeepStudio team’s plan to test how realistic the videos are by displaying them, disguised as actual news stories, on the news feeds of a small number of randomly selected users and measuring their responses.</li>
-            <li>Finally, whether you think Anthro should proceed with DeepStudio, and if so, whether there are any changes you would recommend.</li>
-          </ul>
-          <h5>Instructions</h5>
-          <p>Respond to the CEO’s questions in a 3-5 page (double spaced) memo. You are not required to use formal citation styles (e.g., APA, MLA). Submit the assignment via email by 11:59 PM on Friday Sept. 30th.</p>
-          <p>You will be graded on:</p>
-            <ul>
-              <li>Your identification of the potential ethical issues implicated by the fact pattern</li>
-              <li>
-                How you analyze these issues, which may include your consideration of multiple perspectives, application of general principles, and/or weighing of various factors involved.
-                <ul>
-                  <li>You are encouraged to incorporate professional codes, moral theories, and other analytical frameworks discussed in class if and when you deem appropriate</li>
-                </ul>
-              </li>
-              <li>
-                Responding to and taking a positionon each part of the writing prompt, supported by your analysis above
-                <ul>
-                  <li>Remember: your conclusions aren’t what matter, it’s how you reach them!</li>
-                </ul>
-              </li>
-            </ul>
-
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -907,4 +880,5 @@
       </div>
     </div>
   </div>
+  <script src="assets/js/custom.js"></script>
 </body>
