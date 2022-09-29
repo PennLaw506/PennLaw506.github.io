@@ -279,7 +279,7 @@ div.accordion-body > ul > li > ul > li::marker {
 .card .card-title a {
     border-bottom: none;
     font-weight: 600;
-    ;
+    color: #FFFFFF;
 }
 
 a.img-link {
@@ -287,12 +287,12 @@ a.img-link {
 }
 
 .card-bg-alt {
-    background-color: #011f5b26;
+    background-color: #001f5b;
+    border: 1px solid #011f5b42;
+    margin-top: 10px;
+
 }
 
-.card {
-    margin-top: 10px;
-}
 
 #slides-body {
     overflow-y: scroll;
