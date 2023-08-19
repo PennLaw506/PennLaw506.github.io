@@ -295,7 +295,8 @@ a.img-link {
 
 
 #slides-body {
-    overflow-y: scroll;
-    background: #75709415;
+    overflow-y: hidden;
+    background: #ffffff;
 }
+
 
